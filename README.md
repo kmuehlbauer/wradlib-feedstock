@@ -3,7 +3,7 @@ About wradlib
 
 Home: http://wradlib.org/
 
-Package license: BSD
+Package license: MIT
 
 Feedstock license: BSD
 
