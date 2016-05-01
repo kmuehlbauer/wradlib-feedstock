@@ -10,9 +10,8 @@ source:
     md5: 3ed24ca856a707757148a9ee298feb0c
 
 build:
-    number: 0
-    #skip: True # [py35 and win]
-   
+    number: 1
+
 requirements:
     build:
         - python
