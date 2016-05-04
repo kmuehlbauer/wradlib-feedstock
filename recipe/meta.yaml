@@ -10,29 +10,25 @@ source:
     md5: 3ed24ca856a707757148a9ee298feb0c
 
 build:
-    number: 0
-    skip: True # [py35 and win]
-   
+    number: 1
+
 requirements:
     build:
         - python
-        - numpy >=1.7.0
-        - scipy >=0.9
-        - matplotlib >=1.1.0
-        - h5py >=2.0.1
-        - netcdf4 >=1.0
+        - numpy 
+        - scipy 
+        - matplotlib 
+        - h5py 
+        - netcdf4 
         - gdal
-        # The gdal package on OS X is missing a dependency on krb5
-        - krb5  # [osx]
     run:
         - python
-        - numpy >=1.7.0
-        - scipy >=0.9
-        - matplotlib >=1.1.0
-        - h5py >=2.0.1
-        - netcdf4 >=1.0
+        - numpy 
+        - scipy 
+        - matplotlib 
+        - h5py 
+        - netcdf4 
         - gdal
-        - krb5  # [osx]
 
 test:
     imports:
