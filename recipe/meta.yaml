@@ -7,7 +7,11 @@ package:
 source:
     fn: wradlib-{{ version }}.tar.gz
     url: https://pypi.python.org/packages/source/w/wradlib/wradlib-{{ version }}.tar.gz
-    md5: 3ed24ca856a707757148a9ee298feb0c
+    sha256: 04560b176156219eb6656039ebd938d95294e94cbb3f89a9211a7e1fb20e459a
+    patches:
+        # Patch already upstream and will be in the next version.
+        - latest_scipy_dp.patch
+        - latest_scipy_utils.patch
 
 build:
     number: 2
@@ -17,7 +21,7 @@ requirements:
     build:
         - python
         - numpy
-        - scipy <0.18
+        - scipy
         - matplotlib
         - h5py
         - netcdf4
@@ -25,7 +29,7 @@ requirements:
     run:
         - python
         - numpy
-        - scipy <0.18
+        - scipy
         - matplotlib
         - h5py
         - netcdf4
