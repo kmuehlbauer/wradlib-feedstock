@@ -10,25 +10,26 @@ source:
     md5: 3ed24ca856a707757148a9ee298feb0c
 
 build:
-    number: 1
+    number: 2
+    script: python setup.py install
 
 requirements:
     build:
         - python
-        - numpy 
-        - scipy 
-        - matplotlib 
-        - h5py 
-        - netcdf4 
-        - gdal
+        - numpy
+        - scipy
+        - matplotlib
+        - h5py
+        - netcdf4
+        - gdal 2.1.*
     run:
         - python
-        - numpy 
-        - scipy 
-        - matplotlib 
-        - h5py 
-        - netcdf4 
-        - gdal
+        - numpy
+        - scipy
+        - matplotlib
+        - h5py
+        - netcdf4
+        - gdal 2.1.*
 
 test:
     imports:
