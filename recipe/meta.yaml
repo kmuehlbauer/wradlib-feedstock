@@ -7,28 +7,29 @@ package:
 source:
     fn: wradlib-{{ version }}.tar.gz
     url: https://pypi.python.org/packages/source/w/wradlib/wradlib-{{ version }}.tar.gz
-    md5: 3ed24ca856a707757148a9ee298feb0c
+    sha256: 04560b176156219eb6656039ebd938d95294e94cbb3f89a9211a7e1fb20e459a
 
 build:
-    number: 1
+    number: 2
+    script: python setup.py install
 
 requirements:
     build:
         - python
-        - numpy 
-        - scipy 
-        - matplotlib 
-        - h5py 
-        - netcdf4 
-        - gdal
+        - numpy
+        - scipy <0.18
+        - matplotlib
+        - h5py
+        - netcdf4
+        - gdal 2.1.*
     run:
         - python
-        - numpy 
-        - scipy 
-        - matplotlib 
-        - h5py 
-        - netcdf4 
-        - gdal
+        - numpy
+        - scipy <0.18
+        - matplotlib
+        - h5py
+        - netcdf4
+        - gdal 2.1.*
 
 test:
     imports:
