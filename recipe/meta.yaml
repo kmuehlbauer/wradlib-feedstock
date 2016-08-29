@@ -1,4 +1,4 @@
-{% set version = "0.8.0" %}
+{% set version = "0.9.0" %}
 
 package:
     name: wradlib
@@ -6,18 +6,18 @@ package:
 
 source:
     fn: wradlib-{{ version }}.tar.gz
-    url: https://pypi.python.org/packages/source/w/wradlib/wradlib-{{ version }}.tar.gz
-    sha256: 04560b176156219eb6656039ebd938d95294e94cbb3f89a9211a7e1fb20e459a
+    url: https://pypi.io/packages/source/w/wradlib/wradlib-{{ version }}.tar.gz
+    sha256: 2d8b1c2871bd038c84f12bfc55b3e02a8fd5285666f8180cc641f94a20005937
 
 build:
-    number: 2
+    number: 0
     script: python setup.py install
 
 requirements:
     build:
         - python
         - numpy
-        - scipy <0.18
+        - scipy
         - matplotlib
         - h5py
         - netcdf4
@@ -25,7 +25,7 @@ requirements:
     run:
         - python
         - numpy
-        - scipy <0.18
+        - scipy
         - matplotlib
         - h5py
         - netcdf4
