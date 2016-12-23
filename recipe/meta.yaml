@@ -35,6 +35,8 @@ test:
     imports:
         - wradlib  # [not osx]
     commands:
+        # hack to get macosx matplotlib running
+        # see https://github.com/conda-forge/wradlib-feedstock/pull/20
         - python -c "import matplotlib as mpl; mpl.use('Agg'); import wradlib"  # [osx]
 
 about:
