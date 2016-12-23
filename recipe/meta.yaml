@@ -35,7 +35,7 @@ test:
     imports:
         - wradlib  # [not osx]
     commands:
-        - pythonw -c "import wradlib"  # [osx]
+        - python -c "import matplotlib as mpl; mpl.use('Agg'); import wradlib"  # [osx]
 
 about:
     home: http://wradlib.org/
