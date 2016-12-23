@@ -33,7 +33,9 @@ requirements:
 
 test:
     imports:
-        - wradlib
+        - wradlib  # [not osx]
+    commands:
+        - pythonw -c "import wradlib"  # [osx]
 
 about:
     home: http://wradlib.org/
