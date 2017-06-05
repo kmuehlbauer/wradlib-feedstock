@@ -10,7 +10,7 @@ source:
     sha256: 8e53792d021f25bd44a096ce20999f57fdd6d21f1c0d3b17d43120f0f69320ef
 
 build:
-    number: 0
+    number: 1
     script: python setup.py install
 
 requirements:
@@ -21,7 +21,7 @@ requirements:
         - matplotlib
         - h5py
         - netcdf4
-        - gdal 2.1.*
+        - gdal 2.2.*
     run:
         - python
         - numpy
@@ -29,7 +29,7 @@ requirements:
         - matplotlib
         - h5py
         - netcdf4
-        - gdal 2.1.*
+        - gdal 2.2.*
 
 test:
     imports:
