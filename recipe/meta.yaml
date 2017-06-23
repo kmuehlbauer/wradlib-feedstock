@@ -7,7 +7,7 @@ package:
 source:
     fn: wradlib-{{ version }}.tar.gz
     url: https://pypi.io/packages/source/w/wradlib/wradlib-{{ version }}.tar.gz
-    sha256: 8c25c4cc95fc4db0df57b56995ce5b13499ab4be3767cc53b76c533e09144a6a
+    sha256: 5989211bd5b23d748211436f10869570ebc0c461c4c692407bc98b9d5a780dd7
 
 build:
     number: 0
