@@ -1,4 +1,4 @@
-{% set version = "0.11.0" %}
+{% set version = "0.11.1" %}
 
 package:
     name: wradlib
@@ -7,7 +7,7 @@ package:
 source:
     fn: wradlib-{{ version }}.tar.gz
     url: https://pypi.io/packages/source/w/wradlib/wradlib-{{ version }}.tar.gz
-    sha256: 1017106753146adbf318fd4b9a6d429e8a0a9c069d484709a5fc255b8b385815
+    sha256: dee81051a8f7f994979b6f22fe6b0086106962b8901d275242bbef5b816091d8
 
 build:
     number: 0
@@ -21,7 +21,7 @@ requirements:
         - matplotlib
         - h5py
         - netcdf4
-        - gdal 2.1.*
+        - gdal 2.2.*
     run:
         - python
         - numpy
@@ -29,7 +29,7 @@ requirements:
         - matplotlib
         - h5py
         - netcdf4
-        - gdal 2.1.*
+        - gdal 2.2.*
 
 test:
     imports:
