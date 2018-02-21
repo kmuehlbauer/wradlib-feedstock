@@ -16,6 +16,7 @@ build:
 requirements:
     build:
         - python
+        - deprecation
         - numpy
         - scipy
         - matplotlib
@@ -24,6 +25,7 @@ requirements:
         - gdal 2.2.*
     run:
         - python
+        - deprecation
         - numpy
         - scipy
         - matplotlib
