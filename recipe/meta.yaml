@@ -23,6 +23,7 @@ requirements:
         - h5py
         - netcdf4
         - gdal 2.2.*
+        - xmltodict
     run:
         - python
         - deprecation
@@ -32,6 +33,7 @@ requirements:
         - h5py
         - netcdf4
         - gdal 2.2.*
+        - xmltodict
 
 test:
     imports:
