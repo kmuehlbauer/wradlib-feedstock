@@ -26,6 +26,9 @@ requirements:
     - h5py
     - netcdf4
     - gdal
+    - xarray
+    - cartopy
+    - semver
     - xmltodict
 
 test:
