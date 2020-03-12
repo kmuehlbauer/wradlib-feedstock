@@ -1,4 +1,4 @@
-{% set version = "1.5.0" %}
+{% set version = "1.6.0" %}
 
 package:
   name: wradlib
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/w/wradlib/wradlib-{{ version }}.tar.gz
-  sha256: 9bf0742d7235ea830e83c2269f6b5d1afd83d92696efce0a7bcdb0c4f6604784
+  sha256: 40572b1049dc1085c85c7b5ff909538ed4c8055ca8dda3aa5daf88932450747a
 
 build:
-  number: 1
+  number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
@@ -44,7 +44,7 @@ about:
   home: http://wradlib.org/
   license: MIT
   license_file: LICENSE.txt
-  summary: "Open Source Library for Weather Radar Data Processing"
+  summary: Open Source Library for Weather Radar Data Processing
 
 extra:
   recipe-maintainers:
