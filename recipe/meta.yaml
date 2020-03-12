@@ -25,6 +25,7 @@ requirements:
     - scipy
     - matplotlib-base
     - h5py
+    - h5netcdf
     - netcdf4
     - gdal
     - xarray
