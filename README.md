@@ -5,11 +5,9 @@ Home: http://wradlib.org/
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/wradlib-feedstock/blob/master/LICENSE.txt)
 
 Summary: Open Source Library for Weather Radar Data Processing
-
-
 
 Current build status
 ====================
