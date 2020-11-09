@@ -1,4 +1,4 @@
-{% set version = "1.8.1" %}
+{% set version = "1.8.2" %}
 
 package:
   name: wradlib
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/w/wradlib/wradlib-{{ version }}.tar.gz
-  sha256: 973e235a07f3c201f71b05b27b2460982c9a4702f09c8674669a31aa3af1d30a
+  sha256: 565bae9662707d829ae44c8f88b6be60b8e58645034470ddf8288ba16adf10bb
 
 build:
   number: 0
@@ -32,6 +32,7 @@ requirements:
     - cartopy
     - semver
     - xmltodict
+    - requests
 
 test:
   imports:
