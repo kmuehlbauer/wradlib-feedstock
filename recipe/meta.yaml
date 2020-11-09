@@ -32,6 +32,7 @@ requirements:
     - cartopy
     - semver
     - xmltodict
+    - requests
 
 test:
   imports:
