@@ -1,4 +1,4 @@
-{% set version = "1.14.0" %}
+{% set version = "1.15.0" %}
 
 package:
   name: wradlib
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/w/wradlib/wradlib-{{ version }}.tar.gz
-  sha256: 9def80357afcb77ae7448caebe5b9030b3b5e509b8a09fa8dc6874f12234ce3a
+  sha256: a514e8fbb3c666f4f4a1854c61a76eea4f755bca3fc4cfbb0f92bca58da323d3
 
 build:
   number: 0
