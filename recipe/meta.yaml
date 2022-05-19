@@ -1,4 +1,4 @@
-{% set version = "1.15.0" %}
+{% set version = "1.16.0" %}
 
 package:
   name: wradlib
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/w/wradlib/wradlib-{{ version }}.tar.gz
-  sha256: a514e8fbb3c666f4f4a1854c61a76eea4f755bca3fc4cfbb0f92bca58da323d3
+  sha256: d356659c95168d18655bbfbe9da6f4b7bff69824f90bfb3c70239841ad46592b
 
 build:
   number: 0
@@ -18,6 +18,8 @@ requirements:
     - python >=3
     - pip
     - semver
+    - setuptools_scm
+    - setuptools_scm_git_archive
   run:
     - python >=3
     - deprecation
@@ -30,7 +32,7 @@ requirements:
     - gdal
     - xarray
     - cartopy
-    - semver
+    - packaging
     - xmltodict
     - requests
 
