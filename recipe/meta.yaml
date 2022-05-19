@@ -18,6 +18,8 @@ requirements:
     - python >=3
     - pip
     - semver
+    - setuptools_scm
+    - setuptools_scm_git_archive
   run:
     - python >=3
     - deprecation
@@ -30,7 +32,7 @@ requirements:
     - gdal
     - xarray
     - cartopy
-    - semver
+    - packaging
     - xmltodict
     - requests
 
