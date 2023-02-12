@@ -35,6 +35,7 @@ requirements:
     - packaging
     - xmltodict
     - requests
+    - xradar >=0.0.13
 
 test:
   imports:
