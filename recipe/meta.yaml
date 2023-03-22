@@ -9,7 +9,7 @@ source:
   sha256: 52f551b5980492c5c545712449677d2c89e6bdd897b22bba89cdbad61986879f
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
@@ -17,9 +17,7 @@ requirements:
   host:
     - python >=3
     - pip
-    - semver
     - setuptools_scm
-    - setuptools_scm_git_archive
   run:
     - python >=3
     - deprecation
