@@ -17,7 +17,10 @@ requirements:
   host:
     - python >=3
     - pip
-    - setuptools_scm
+    - hatchling
+    - hatch-vcs
+    - hatch-fancy-pypi-readme
+    - hatch-requirements-txt
   run:
     - python >=3
     - deprecation
@@ -31,9 +34,10 @@ requirements:
     - xarray
     - cartopy
     - packaging
+    - pyproj
     - xmltodict
     - requests
-    - xradar >=0.0.13
+    - xradar >=0.4.0
 
 test:
   imports:
