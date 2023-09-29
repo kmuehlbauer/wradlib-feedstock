@@ -1,4 +1,4 @@
-{% set version = "1.19.2" %}
+{% set version = "2.0.0" %}
 
 package:
   name: wradlib
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/w/wradlib/wradlib-{{ version }}.tar.gz
-  sha256: 7ab9a4073539b1fd0ea6b634b97f5f72a774d085c837d64a87d0368dfc421ab7
+  sha256: 69cc8cafa188db61236fdaf19d2eb1f52c073fc8fc164fe51517e87a6162415a
 
 build:
   number: 0
@@ -17,7 +17,10 @@ requirements:
   host:
     - python >=3
     - pip
-    - setuptools_scm
+    - hatchling
+    - hatch-vcs
+    - hatch-fancy-pypi-readme
+    - hatch-requirements-txt
   run:
     - python >=3
     - deprecation
@@ -31,9 +34,10 @@ requirements:
     - xarray
     - cartopy
     - packaging
+    - pyproj
     - xmltodict
     - requests
-    - xradar >=0.0.13
+    - xradar >=0.4.0
 
 test:
   imports:
